@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,14 +34,19 @@
         }
         button {
             margin: 10px;
-            padding: 10px 20px;
+            padding: 8px 12px;
             font-size: 16px;
             cursor: pointer;
         }
         input {
             width: 90%;
             text-align: center;
+            font-size: 16px;
+        }
+        footer {
+            margin-top: 20px;
             font-size: 14px;
+            color: #555;
         }
     </style>
 </head>
@@ -65,21 +70,17 @@
             <td><input type="time" value="07:00"></td>
             <td><input type="text" value="Café da manhã"></td>
         </tr>
-        <tr data-time="07:30">
-            <td><input type="time" value="07:30"></td>
-            <td><input type="text" value="Início do trabalho"></td>
-        </tr>
         <tr data-time="08:00">
             <td><input type="time" value="08:00"></td>
-            <td><input type="text" value="Levar esposa ao trabalho"></td>
+            <td><input type="text" value="Trabalho"></td>
         </tr>
-        <tr data-time="09:30">
-            <td><input type="time" value="09:30"></td>
-            <td><input type="text" value="Retorno ao trabalho (home office)"></td>
+        <tr data-time="09:00">
+            <td><input type="time" value="09:00"></td>
+            <td><input type="text" value="Levar esposa ao trabalho"></td>
         </tr>
         <tr data-time="10:00">
             <td><input type="time" value="10:00"></td>
-            <td><input type="text" value="Acordar as crianças"></td>
+            <td><input type="text" value="Acordar crianças e café"></td>
         </tr>
         <tr data-time="11:30">
             <td><input type="time" value="11:30"></td>
@@ -87,7 +88,7 @@
         </tr>
         <tr data-time="13:00">
             <td><input type="time" value="13:00"></td>
-            <td><input type="text" value="Levar as crianças para a escola"></td>
+            <td><input type="text" value="Voltar ao trabalho"></td>
         </tr>
         <tr data-time="15:30">
             <td><input type="time" value="15:30"></td>
@@ -95,15 +96,11 @@
         </tr>
         <tr data-time="16:00">
             <td><input type="time" value="16:00"></td>
-            <td><input type="text" value="Trabalho"></td>
-        </tr>
-        <tr data-time="16:30">
-            <td><input type="time" value="16:30"></td>
-            <td><input type="text" value="Cochilo"></td>
+            <td><input type="text" value="Soneca"></td>
         </tr>
         <tr data-time="17:30">
             <td><input type="time" value="17:30"></td>
-            <td><input type="text" value="Buscar as crianças na escola"></td>
+            <td><input type="text" value="Buscar crianças na escola"></td>
         </tr>
     </table>
 
@@ -175,6 +172,11 @@
 
         window.onload = carregarCronograma;
     </script>
+
+    <!-- Rodapé com direitos autorais -->
+    <footer>
+        © 2025 Take The Vision. Todos os direitos reservados.
+    </footer>
 
 </body>
 </html>
